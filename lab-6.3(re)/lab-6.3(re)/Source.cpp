@@ -55,7 +55,7 @@ int Max(int* a, const int size, int max, int i)
 }
 
 template<typename T>
-T Max(T* a, const int size, int max, int i)
+T Max(T* a, const int size, T max, int i)
 {
 	if (a[i] > max && a[i] % 2 == 0)
 		max = a[i];

@@ -78,7 +78,8 @@ int main()
 	cout << "High = "; cin >> High;
 	Create<int>(a, n, Low, High, 0);
 	Print<int>(a, n, 0);
-	cout << "max = " << Max<int>(a, n, a[0], 0) << endl;
+	int max = Low + 1;
+	cout << "max = " << Max<int>(a, n, max, 0) << endl;
 	delete[] a;
 	a = nullptr;
 	return 0;

@@ -13,8 +13,9 @@ namespace UnitTest1
 		TEST_METHOD(TestMethod1)
 		{
 			int a[] = { 1, 2, 3 };
-			int max = Max(a, 3, a[0], 0);
-			Assert::AreEqual(2, max);
+			int max = 10;
+			int tmp = Max(a, 3, max, 0);
+			Assert::AreEqual(10, tmp);
 
 		}
 	};
